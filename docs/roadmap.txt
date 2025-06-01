@@ -1,0 +1,90 @@
+🔧 Development Roadmap for HighSafe (24 Days)
+🔁 Week 1 – Power & Core Hardware Setup
+
+    Day 1–2:
+    ✅ Test 18650 batteries with TP4056 charging module
+    ✅ Ensure safety (do not short)
+    ✅ Confirm full charging and protection features
+
+    Day 3:
+    🔌 Connect LM2596 Buck Converter
+    ✅ Step down voltage to 5V and 3.3V
+    ✅ Power up basic components like LEDs and Buzzers
+
+    Day 4:
+    🧠 Test ESP32 Board vs TTGO T-Call
+    ✅ Upload basic “Hello World” or LED blink code
+    ✅ Compare functionality & GSM capability
+    ✅ Decide which one to proceed with
+
+    Day 5:
+    🧭 Connect and test NEO-7M GPS Module
+    ✅ Get and print location coordinates
+    ✅ Test update rate and serial communication
+
+    Day 6–7:
+    🛰️ Connect GPS to GSM (TTGO or SIM800L)
+    ✅ On button press, send SMS with GPS location and timestamp
+    ✅ Basic SIM setup and serial communication tests
+    ✅ Test both modules (if ESP32+SIM800L fails, use external GSM)
+
+⚙️ Week 2 – Sensor Integration & Data Capture
+
+    Day 8–9:
+    🚗 Connect and calibrate MPU6050 (accelerometer + gyro)
+    ✅ Use motion detection library
+    ✅ Identify crash events based on G-force thresholds
+
+    Day 10:
+    🔘 Implement button interrupt logic
+    ✅ One for Robbery
+    ✅ One for false alarm override within 10 seconds
+
+    Day 11:
+    🎯 Combine crash detection + countdown + SMS
+    ✅ If crash detected, buzzer beeps + timer
+    ✅ If no override in 10s, sends emergency alert
+
+    Day 12–13:
+    🌡️ Connect Temperature Sensor + RGB LED + buzzer
+    ✅ RGB for status (Green: Safe, Red: Alert, Blue: Robbery)
+    ✅ Buzzer for feedback
+    ✅ Temperature for additional data (optional now)
+
+    Day 14:
+    🖥️ OLED Display
+    ✅ Show battery level, signal strength, GPS status
+
+🧠 Week 3 – System Integration
+
+    Day 15–16:
+    🔄 Integrate all modules
+    ✅ Power, GPS, GSM, MPU6050, Display, Buttons
+
+    Day 17:
+    🔁 Stress test system
+    ✅ Check performance under real use
+    ✅ Test alerts (SMS, time delay, edge cases)
+
+    Day 18:
+    🧪 Prototype crash simulation (shake/crash test manually)
+
+    Day 19:
+    🔄 Fine-tune thresholds, delays, UI display
+
+💻 Week 4 – Polishing & Documentation
+
+    Day 20–21:
+    📐 Create final Fritzing schematic
+    ✅ Label all components
+    ✅ Add power source notes and wiring clarity
+
+    Day 22:
+    🧾 Clean up code, write comments, and prepare documentation
+
+    Day 23:
+    📁 Push everything to GitHub Repo
+    ✅ Code, schematics, images, parts list, build instructions
+
+    Day 24:
+    🧪 Final review + practice demo/pitch
