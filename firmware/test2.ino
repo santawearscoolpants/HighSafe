@@ -30,9 +30,9 @@ HardwareSerial sim800(1);
 #define ROBBERY_BTN 33
 
 // Contacts
-const char* emergencyContact = "+233XXXXXXXXX";
-const char* familyContact = "+233YYYYYYYYY";
-const char* policeContact = "+233ZZZZZZZZZ";
+const char* emergencyContact = "+233249097323"; 
+const char* familyContact = "+233594849077";   
+const char* policeContact = "+233244077854"; 
 
 // Tilt threshold (degrees)
 const float TILT_THRESHOLD = 45.0;
